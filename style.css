@@ -79,7 +79,7 @@ a{
 }
 #open-btn{
     position: absolute;
-    top: 70%;
+    top: 80%;
     left: 10%;
     padding: 17px;
     background: transparent;
@@ -97,13 +97,12 @@ a{
 #modal{
     background-color: white;
     width: 200px;
-    height: 100px;
     padding: 10px;
     border-radius: 5px;
     font-size: 1.5rem;
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; */
     animation-name: animatemodal;
     animation-duration: .4s;
 }
@@ -130,4 +129,15 @@ a{
         top: 50%;
         opacity: 1;
     }
+}
+.btn{
+    padding: 3px 5px;
+    background-color: rgb(100, 98, 98);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+p{
+    font-weight: bold;
+    font-family:  sans-serif;
 }
