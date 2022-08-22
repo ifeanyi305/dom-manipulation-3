@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background: url(images/libaryBG.webp) no-repeat center center/ cover;
+}
+@media(max-width:800px){
+body{
+    display: flex;
+    flex-direction: column;
+}
+}
+.next-project,a{
+    color: rgb(241, 241, 241);
+    text-decoration: none;
+    font-family: sans-serif;
+}
+a{
+    color: antiquewhite;
+}
+.container{
+    max-width: 1100px;
+    /* height: 450px; */
+}
+.header{
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    border: solid 2px white;
+    color: white;
+    background-color: rgb(73, 71, 71);
+    padding: 5px;
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+.main-content{
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px 40px;
+    box-shadow: 0 0 10px;
+}
+.main-content .text-area{
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+.main-content .person{
+    font-size: 1.6rem;
+    color: red;
+    text-transform: uppercase;
+    margin-top: 20px;
+
+}
+.button-area button{
+    background-color: rgb(73, 71, 71);
+    color: white;
+    font-size: 1.3rem;
+    padding: 10px 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.button-area button:active{
+    background-color: lightblue;
+}
+
+      /* modal styling */
+.body2{
+    background: url(images/wilderness-img.jpeg) no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+}
+#open-btn{
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    padding: 17px;
+    background: transparent;
+    color: white;
+    font-size: 1.5rem;
+    border: solid 2px white;
+    border-radius: 10px;
+    box-shadow: 0 0 3px black;
+    transition: .5s;
+}
+#open-btn:hover{
+    background-color: white;
+    color: black;
+}
+#modal{
+    background-color: white;
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation-name: animatemodal;
+    animation-duration: .4s;
+}
+#close-btn{
+    font-size: 3rem;
+}
+#close-btn{
+    font-size: 3rem;
+    font-weight: 900;
+    cursor: pointer;
+    color: red;
+}
+#modal-container{
+    display: none;
+    position: fixed;
+    z-index: 1;
+}
+@keyframes animatemodal{
+    from{
+        top: -300px;
+        opacity: 0;
+    }
+    to{
+        top: 50%;
+        opacity: 1;
+    }
+}
